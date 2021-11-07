@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.text.Html
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
@@ -242,7 +242,6 @@ class QuestionFragment : Fragment() {
             }
             finishQuestion()
         }
-
     }
 
     private fun handleTimers() {
@@ -288,7 +287,6 @@ class QuestionFragment : Fragment() {
             it.btnNext.visibility = View.VISIBLE
         }
     }
-
 
     private fun setViewsVisible() {
         binding.also {

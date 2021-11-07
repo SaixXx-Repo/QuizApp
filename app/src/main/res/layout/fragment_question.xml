@@ -30,9 +30,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@color/gray"
             android:gravity="center"
             android:text="@string/_50_50"
+            android:textColor="@color/gray"
             android:textSize="18sp" />
 
         <ImageView
@@ -65,9 +65,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="8dp"
-            app:tint="@color/gray"
             android:gravity="center"
-            android:src="@drawable/ic_extra_time" />
+            android:src="@drawable/ic_extra_time"
+            app:tint="@color/gray" />
 
         <ImageView
             android:id="@+id/iv_extra_time_cross"

@@ -9,8 +9,6 @@ import com.quizapp.domain.repository.QuestionRepository
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.last
 import kotlinx.coroutines.runBlocking
-
-
 import org.junit.Before
 import org.junit.Test
 import retrofit2.Retrofit

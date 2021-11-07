@@ -1,15 +1,13 @@
 package com.quizapp.presentation.ui.result
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.quizapp.R
 import com.quizapp.databinding.FragmentResultBinding
-import com.quizapp.databinding.FragmentStartBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -34,7 +32,6 @@ class ResultFragment : Fragment() {
         binding.btnFinish.setOnClickListener {
             it.findNavController().navigate(R.id.action_resultFragment_to_startFragment)
         }
-
 
         return binding.root
     }
