@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="_50_50">50:50</string>
+    <string name="quiz_result">QUIZ RESULT</string>
+    <string name="your_score">Your score:</string>
+    <string name="avg_time">Avg. time:</string>
+    <string name="finish">Finish</string>
+    <string name="quiz_app">QUIZ APP</string>
+    <string name="start">Start</string>
+    <string name="hard">Hard</string>
+    <string name="medium">Medium</string>
+    <string name="easy">Easy</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".presentation.ui.start.StartFragment">
+
+
+    <TextView
+        android:id="@+id/tv_quiz_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/quiz_app"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/sp_category"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/white"
+        android:theme="@style/SpinnerItemStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quiz_headline" />
+
+    <ImageView
+        android:id="@+id/iv_spinner_arrow_category"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_arrow_down"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_category"
+        app:layout_constraintEnd_toEndOf="@+id/sp_category"
+        app:layout_constraintTop_toTopOf="@+id/sp_category"
+        app:tint="@color/black" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_easy"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/easy"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_medium"
+        app:layout_constraintTop_toBottomOf="@+id/sp_category"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_medium"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/medium"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_category"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_hard"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/hard"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btn_medium"
+        app:layout_constraintTop_toBottomOf="@+id/sp_category"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="@string/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_medium" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
